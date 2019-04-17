@@ -1,0 +1,353 @@
+/*
+清楚默认样式
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*背景*/
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ul{
+    list-style-type: none;
+}
+
+/*头部开始*/
+.box{
+    width: 100%;
+    position: absolute;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+header{
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+/*头部结束*/
+/*主体开始*/
+section .search{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 50px auto;
+    border-radius: 8px;
+    border: 1px solid #e918ff;
+    outline: none;
+    text-indent: 10px;
+}
+section ul{
+    padding: 10px 0;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid  #ccc;
+    background-color: #cccccc;
+    opacity: 0.6;
+    border-radius: 6px;
+}
+section ul li{
+     padding: 5px 30px;
+     height: 25px;
+    line-height: 25px;
+    color: black;
+    border-bottom: rgba(38, 8, 63, 0.85) 1px dashed;
+    font-size: 13px;
+    /*小手*/cursor: pointer;
+}
+section ul li:hover{
+    color: #e918ff;
+}
+/*主体结束*/
+/*控制层开始*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(46, 9, 44, 0.98);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+}
+footer .container{
+    margin-left: 300px;
+}
+/*按钮*/
+footer .btns{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+footer .btns .prev{
+    width:  28px;
+    height: 28px;
+    background: url("../img/playbar.png") 0px -130px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .btns .prev:hover{
+    background: url("../img/playbar.png") -30px -130px;
+}
+footer .btns .start{
+    width:  36px;
+    height: 36px;
+    background: url("../img/playbar.png") 0px -204px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .btns .start:hover{
+    background: url("../img/playbar.png") -40px -204px;
+}
+footer .btns .next{
+    width:  28px;
+    height: 28px;
+    background: url("../img/playbar.png") -80px -130px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .btns .next:hover{
+    background: url("../img/playbar.png") -110px -130px;
+}
+/*进度条*/
+footer .bars .logo{
+    width: 34px;
+    height: 34px;
+    margin: 7px 20px;
+}
+footer .bars .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+footer span{
+    margin:  0 5px;
+}
+footer .ctrl-bars-box{
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+}
+footer .ctrl-bars-box .ctrl-bars{
+    width: 400px;
+    height: 6px;
+    background-color: #535353;
+    opacity: 0.7;
+    border-radius: 6px;
+    position: relative;
+    left: 0px;
+    top: 6px;
+}
+footer .ctrl-bars-box .nowBars{
+  position: absolute;
+    width: 0px;
+    height: 6px;
+    background-color: red;
+    border-radius: 6px;
+    top: 0px;
+    left: 0px;
+}
+footer .ctrl-bars-box .ctrl-btn{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f3f3f3;
+    top: -5px;
+    left: -8px;
+    cursor: pointer;
+}
+footer .ctrl-bars-box .ctrl-btn .small{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 5px;
+}
+footer .times {
+    margin: 17px 20px;
+    color: white;
+}
+
+/*音量、模式*/
+footer .modes .voice{
+    width:  20px;
+    height: 20px;
+    background:url("../img/playbar.png") -4px -250px;
+    border-radius: 50%;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+footer .modes .voice:hover{
+    background:url("../img/playbar.png") -33px -250px;
+
+}
+footer .modes .mode{
+    width:  20px;
+    height: 20px;
+    background:url("../img/playbar.png") -5px -346px;
+    border-radius: 50%;
+    margin: 15px 35px;
+    cursor: pointer;
+}
+footer .modes .mode:hover{
+    background:url("../img/playbar.png") -35px -346px;
+
+}
+footer .modes .play-list{
+    width:  56px;
+    height: 30px;
+    background:url("../img/playbar.png") -45px -69px;
+    border-radius: 30%;
+    margin: 12px 0px;
+    cursor: pointer;
+    color: white;
+    line-height: 26px;
+    text-indent: 30px;
+}
+footer .modes .play-list:hover{
+    background:url("../img/playbar.png") -45px -99px;
+
+}
+footer .play-list-box{
+    display: none;
+    left: 25%;
+    /*height: 200px;*/
+    border-radius: 6px;
+    width: 50%;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f3f3f3;
+    opacity: 0.6;
+    color: #ccc;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+footer .play-list-box .list-header{
+background-color: rgba(66, 9, 44, 0.98);
+
+    text-indent: 20px;
+    line-height: 40px;
+    height: 40px;
+}
+footer .play-list-box ul{
+    height: 200px;
+    background-color: rgba(46, 9, 44, 0.98);
+    font-size: 13px;
+    /*overflow: scroll;*/
+}
+
+footer .play-list-box ul li{
+    width: 100%;
+    height: 28px;
+    text-indent: 20px;
+}
+footer .play-list-box ul li:hover{
+    color: #ffffff;
+    background-color: rgba(80, 9, 44, 0.98);
+}
+footer .play-list-box ul .active{
+     color: #ffffff;
+     background-color: rgba(80, 9, 44, 0.98);
+ }
+footer .play-list-box ul li i:nth-child(1){
+float: right;
+}
+footer .play-list-box ul li span:nth-of-type(1){
+    height: 28px;
+    line-height: 28px;
+float: left;
+}
+footer .play-list-box ul li span:nth-of-type(2){
+    height: 28px;
+    line-height: 28px;
+    float: right;
+    padding-right: 20px;
+}
+footer .play-list-box ul li i{
+    font-size: 24px;
+    padding-right: 45px;
+    height: 28px;
+    line-height: 28px;
+    width: 25px;
+}
+footer .play-list-box ul li i:hover{
+    cursor: pointer;
+    font-weight:900;
+}
+/*控制层结束*/
+.info{
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 6px;
+    background-color: rgba(46, 9, 44, 0.98);
+    line-height: 40px;
+    text-indent:15px;
+    position: absolute;
+    font-size: 13px;
+    bottom: 50px;
+    z-index: 9;
+    border: 1px #fff solid;
+    right: 383px;
+    display: none;
+}
+/*.volumes{
+    width: 5px;
+    height: 100px;
+
+    background-color: #827684;
+    position :relative;
+    bottom: 50px;
+    right: 480px;
+    border-radius: 6px;
+}*/
+.volumes{
+    width: 5px;
+    height: 100px;
+  display: none;
+    background-color: #827684;
+    position :relative;
+    bottom: 100px;
+    left: 1039px;
+    border-radius: 6px;
+}
+.volume{
+    background-color: white; /*rgba(80, 9, 44, 0.98);*/
+    width: 10px;
+    height: 10px;
+    position :absolute;
+    bottom: -5px;
+    right: -2.5px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.nowvolume{
+    border-radius: 6px;
+    position :absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0px;
+    background-color: rgba(80, 9, 44, 0.98);
+}
+/*搜索列表*/
+.searchlist{
+     height: 300px;
+    overflow-y: scroll;
+
+}
+.element { overflow: -moz-scrollbars-none; }
+.searchlist li{
+    font-size: 10px;
+}

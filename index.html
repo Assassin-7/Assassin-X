@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器</title>
+<link rel="stylesheet" href="css/index.css ">
+</head>
+<body>
+<div class="box">
+    <!--头部-->
+    <header>
+        <div class="container">
+            <h3 class="left">课工场音乐播放器</h3>
+            <p class="right">By - Assassin 柒</p>
+        </div>
+    </header>
+    <!--主体-->
+    <section>
+        <div class="container">
+            <input type="text" class="search">
+        </div>
+        <ul class="searchlist">
+
+        </ul>
+    </section>
+    <!--控制条-->
+    <footer>
+        <div class="container">
+            <!--按键-->
+          <div class="btns left">
+              <div class="prev left"></div>
+              <div class="start left"></div>
+              <div class="next left"></div>
+          </div>
+            <!--进度条-->
+            <div class="bars left">
+              <div class="left logo"><img src="img/2.jpg"></div>
+              <div class="left ctrl-bars-box">
+                  <p><span></span></p>
+                  <div class="ctrl-bars">
+                      <div class="nowBars"></div>
+                      <div class="ctrl-btn">
+                          <div class="small"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="left times">
+                  <span class="nowtime">00:00</span>
+                  /
+                  <span class="alltime">00:00</span>
+              </div>
+            </div>
+            <!--音量播放方式-->
+            <div class="left modes">
+                <div class="left voice"></div>
+                <div class="left mode"></div>
+                <div class="left play-list"></div>
+            </div>
+        </div>
+        <div class="play-list-box">
+         <div class="list-header">
+             <h4>播放列表</h4>
+         </div>
+            <ul>
+            </ul>
+        </div>
+        <!--音量-->
+        <div class="volumes">
+            <div class="volume"></div>
+            <div class="nowvolume"></div>
+        </div>
+    </footer>
+</div>
+<div class="info"></div>
+
+<audio></audio>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<script src="js/three.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/index1.js"></script>
+
+
+</body>
+</html>
